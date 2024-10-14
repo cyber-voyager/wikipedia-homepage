@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Wikipedia Home</title>
+
+    <style>
+      .languages-and-logo-container {
+        width: 700px;
+        height: 370px;
+        margin: auto;
+
+        position: relative;
+      }
+
+      .language-couple {
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+
+        position: relative;
+        margin-bottom: 30px;
+      }
+
+      .last-couple {
+        margin-bottom: 0;
+      }
+
+      .couple-1,
+      .couple-9 {
+        position: absolute;
+        top: 0;
+        left: 80px;
+      }
+
+      .couple-2,
+      .couple-10 {
+        position: absolute;
+        top: 0;
+        right: 80px;
+      }
+
+      .couple-3,
+      .couple-7 {
+        position: absolute;
+        left: 40px;
+      }
+
+      .couple-4,
+      .couple-8 {
+        position: absolute;
+        right: 40px;
+      }
+
+      .couple-5 {
+        position: absolute;
+        left: 0;
+      }
+
+      .couple-6 {
+        position: absolute;
+        right: 0;
+      }
+
+      .language-name {
+        text-align: center;
+        font-family: Arial;
+        font-size: 18px;
+        font-weight: bold;
+        color: dodgerblue;
+      }
+
+      .article-count {
+        display: block;
+        font-size: 12px;
+        font-weight: normal;
+        color: gray;
+        margin-top: 3px;
+      }
+
+      .wikipedia-logo {
+        width: 300px;
+        object-fit: cover;
+        object-position: center;
+
+        position: absolute;
+        left: 200px;
+        right: 200px;
+        top: 60px;
+        bottom: 60px;
+      }
+
+      .search-container {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .search-bar {
+        width: 500px;
+        height: 50px;
+        border-radius: 0;
+        border: 1px solid gray;
+        border-right: none;
+        padding-left: 12px;
+        font-family: Arial;
+        font-size: 16px;
+        color: dodgerblue;
+      }
+
+      .search-bar:focus {
+        outline: 1px solid dodgerblue;
+        outline-offset: -2px;
+      }
+
+      .search-button {
+        background-color: dodgerblue;
+        height: 50px;
+        padding: 0 35px;
+        text-align: center;
+        border-radius: 0;
+        border: none;
+        margin-left: -2px;
+        cursor: pointer;
+
+        display: flex;
+        align-items: center;
+      }
+
+      .search-icon {
+        color: white;
+        height: 25px;
+        vertical-align: center;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <header class="header">
+      <h1 class="wikipedia-text-logo">
+        WIKIPEDIA
+      </h1>
+      <p class="wikipedia-slogan">
+        THE FREE ENCYCLOPEDIA
+      </p>
+    </header>
+
+    <main>
+      <section class="languages-and-logo-container">
+        <div class="language-couple">
+          <div class="couple-1">
+            <p class="language-name">
+              English
+              <span class="article-count">
+                6,873,000+ articles
+              </span>
+            </p>
+          </div>
+          <div class="couple-2">
+            <p class="language-name">
+              العربية
+              <span class="article-count">
+                مقالة1,239,000
+              </span>
+            </p>
+          </div>
+        </div>
+        <div class="language-couple">
+          <div class="couple-3">
+            <p class="language-name">
+              日本語
+              <span class="article-count">
+                1,427,000+ 記事
+              </span>
+            </p>
+          </div>
+          <div class="couple-4">
+            <p class="language-name">
+              Русский
+              <span class="article-count">
+                1 996 000+ статей
+              </span>
+            </p>
+          </div>
+        </div>
+        <div class="language-couple">
+          <div class="couple-5">
+            <p class="language-name">
+              Español
+              <span class="article-count">
+                1.974.000+ artículos
+              </span>
+            </p>
+          </div>
+          <div class="couple-6">
+            <p class="language-name">
+              Deutsch
+              <span class="article-count">
+                2.937.000+ Artikel
+              </span>
+            </p>
+          </div>
+        </div>
+        <div class="language-couple">
+          <div class="couple-7">
+            <p class="language-name">
+              Français
+              <span class="article-count">
+                2 631 000+ articles
+              </span>
+            </p>
+          </div>
+          <div class="couple-8">
+            <p class="language-name">
+              Italiano
+              <span class="article-count">
+                1.879.000+ voci
+              </span>
+            </p>
+          </div>
+        </div>
+        <div class="language-couple last-couple">
+          <div class="couple-9">
+            <p class="language-name">
+              中文
+              <span class="article-count">
+                1,438,000+ 条目 / 條目
+              </span>
+            </p>
+          </div>
+          <div class="couple-10">
+            <p class="language-name">
+              Português
+              <span class="article-count">
+                1.132.000+ artigos
+              </span>
+            </p>
+          </div>
+        </div>
+
+        <img class="wikipedia-logo" src="images/Wikipedia-logo.png">
+      </section>
+
+      <section class="search-container">
+        <input class="search-bar" type="search">
+
+        <button class="search-button">
+          <img class="search-icon" src="icons/search-icon.svg">
+        </button>
+      </section>
+    </main>
+
+    <footer>
+
+    </footer>
+  </body>
+
+</html>

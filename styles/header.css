@@ -1,0 +1,14 @@
+.header {
+  height: 200px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wikipedia-slogan {
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: gray;
+}
